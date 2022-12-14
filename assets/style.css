@@ -1,7 +1,125 @@
+/*main color palette*/
 :root {
+    --dark: rgb(54, 68, 62);
+    --light: rgb(238, 252, 246);
+    --primary:rgb(44, 83, 66);
+    --secondary: rgb(116, 158, 140);
 
 }
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary);
+    background-color:var(--white);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light);
+    color: var(--dark);
+
+}
+
+header h1 {
+    font-size: xx-large;
+    margin: 0;
+    padding: 3%;
+    border-radius: 0%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 2%; 
+    
+}
+
+
+nav a {
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+nav a:hover {
+    color: rgb(65, 153, 95);
+}
+
+main {
+
+}
+
+
+.port-section {
+    display:flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 10px;
+    
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 5px solid var(--dark);
+}
+
+.flex-item {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+/*main project image*/
+.flex-item:first-child {
+    min-height: 450px;
+    min-width: 450px;
+    flex-basis: 100%;
+
+}
+
+/*mouse over project links*/
+.flex-item:hover {
+    
+
+}
+
+/*place holder images for "my work"*/
+
+.Work-1 {
+    background-image: url("../images/IMG_3372.jpg");
+}
+
+.Work-2 {
+    background-image: url("../images/IMG_3531.jpg");
+}
+
+.Work-3 {
+    background-image: url("../images/IMG_4448.jpg");
+}
+
+.Work-4 {
+    background-image: url("../images/IMG_4532.jpg");
+}
+
+.Prework-Study-Guide {
+    background-image: url("../images/IMG_5037.jpg");
+}
+
+@media  and () {
+    
 }
