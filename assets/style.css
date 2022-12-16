@@ -52,11 +52,6 @@ nav a:hover {
     color: rgb(65, 153, 95);
 }
 
-main { 
-
-}
-
-
 
 #about img {
     width: 250px; 
@@ -82,17 +77,36 @@ main {
     flex-direction: row;
     padding: 15px;
     margin-top: 10px;
-    margin-left: 9vw;
-    margin-right: 9vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#work{
+    justify-content: space-around;
+
 }
 
 .flex-container {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: flex-start;
-    border: 5px solid var(--dark);
     height: 60vh;
+    flex-wrap: wrap;
+}
+.flex-container a {
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--light);
+
+}
+
+/*mouse over project links*/
+.flex-container a:hover{
+    color:rgb(65, 153, 95); 
+}
+/*change border color when hover over project links*/
+#largediv :hover, #row1 a:hover, #row2 a:hover {
+    border: 5px solid rgb(156, 216, 156);
 }
 
 .flex-item {
@@ -100,19 +114,10 @@ main {
     align-items: flex-end;
 
 }
-
-/*main project image*/
-.flex-item:first-child {
-    /* min-height: 100%;
-    min-width: 100%; */
-
-    /* flex-basis: 100%; */
-
-}
-
-/*mouse over project links*/
-.flex-item:hover {
-    
+.flex-item div {
+    display: flex;
+    background-color: var(--light);
+    margin-bottom: 15px;
 }
 
 /*place holder images for "my work"*/
@@ -121,34 +126,71 @@ main {
     background-image: url("../images/IMG_3372.jpg");
     background-size: 100%;
     width: 40vw;
+    margin: 1%;
+    border: 5px solid var(--dark);
 
 }
 .flex-container #row1, #row2 {
     display: flex;
     height: 50%;
 }
+
 #largediv {
     height: 100%;
     display: flex;
 }
 .Work-2 {
     background-image: url("../images/IMG_3531.jpg");
-    width: 20vw;
+    background-size: 100%;
+    width: 15vw;
+    margin: 1%;
+    border: 5px solid var(--dark);
 }
 .Work-3 {
     background-image: url("../images/IMG_4448.jpg");
-    width: 20vw;
+    background-size: 100%;
+    width: 15vw;
+    margin: 1%;
+    border: 5px solid var(--dark);
 }
 
 .Work-4 {
     background-image: url("../images/IMG_4532.jpg");
-    width: 20vw;
+    background-size: 100%;
+    width: 15vw;
+    margin: 1%;
+    border: 5px solid var(--dark);
 }
 
 
 .Work-5 {
     background-image: url("../images/IMG_5037.jpg");
-    width: 20vw;
+    background-size: 100%;
+    width: 15vw;
+    margin: 1%;
+    border: 5px solid var(--dark);
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 5px;
+}
+
+#contact a:hover{
+    color:rgb(65, 153, 95); 
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer  {
+    position: fixed;
+    margin:auto; 
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -169,4 +211,10 @@ main {
     #about {
         text-align: center;
     }
-}
+    #left,
+    #right {
+        width: 100%;
+    }
+    }
+        
+    
